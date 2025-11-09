@@ -8,4 +8,16 @@ return {
     lazy = false,
     priority = 1000,
   },
+  {
+    'mbbill/undotree',
+    lazy = false,
+  },
+  {
+    'tpope/vim-fugitive',
+    lazy = false,
+  },
+  {
+    'theprimeagen/harpoon',
+    lazy = false,
+  },
 }
