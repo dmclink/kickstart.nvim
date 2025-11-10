@@ -20,4 +20,10 @@ return {
     'theprimeagen/harpoon',
     lazy = false,
   },
+  {
+    'airblade/vim-rooter',
+    config = function()
+      vim.g.rooter_patterns = { '.gitignore', '.git', 'package.json', 'MakeFile', 'go.mod', 'go.sum', 'src/' }
+    end,
+  },
 }
