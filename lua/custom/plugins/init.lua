@@ -26,4 +26,5 @@ return {
       vim.g.rooter_patterns = { '.gitignore', '.git', 'package.json', 'MakeFile', 'go.mod', 'go.sum', 'src/' }
     end,
   },
+  { 'nvim-treesitter/playground' },
 }
