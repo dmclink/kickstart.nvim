@@ -21,7 +21,7 @@ vim.keymap.set('x', '<leader>p', '"_dP', { desc = 'delete and [P]aste into void'
 
 vim.keymap.set('n', '<leader>y', '"+y', { desc = '[Y]ank to clipboard' })
 vim.keymap.set('v', '<leader>y', '"+y', { desc = '[Y]ank to clipboard' })
-vim.keymap.set('n', '<leader>Y', '"+Y', { desc = '[Y]ank to clipboard' })
+vim.keymap.set('n', '<leader>Y', '"+Y', { desc = '[Y]ank entire line to clipboard' })
 
 vim.keymap.set('n', '<leader>d', '"_d', { desc = '[D]elete into void' })
 vim.keymap.set('v', '<leader>d', '"_d', { desc = '[D]elete into void' })

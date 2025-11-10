@@ -16,4 +16,4 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
-vim.isfname:append '@-@'
+vim.opt.isfname:append '@-@'
