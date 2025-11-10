@@ -7,7 +7,6 @@ return {
     'webhooked/kanso.nvim',
     lazy = false,
     priority = 1000,
-    vim.cmd.colorscheme 'kanso',
   },
   {
     'mbbill/undotree',
