@@ -687,7 +687,7 @@ require('lazy').setup({
         eslint = {},
         cssls = {},
         html = {},
-        json = {},
+        jsonls = {},
 
         lua_ls = {
           -- cmd = { ... },
