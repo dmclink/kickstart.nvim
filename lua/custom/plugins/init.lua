@@ -27,4 +27,5 @@ return {
     end,
   },
   { 'nvim-treesitter/playground' },
+  { 'nvim-mini/mini.colors', version = false },
 }
