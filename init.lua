@@ -1047,6 +1047,8 @@ require('lazy').setup({
 })
 
 require 'keymaps'
+require 'options'
+require 'harpoon-config'
 
 vim.cmd 'colorscheme kanso-zen'
 
