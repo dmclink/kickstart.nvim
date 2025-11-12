@@ -29,4 +29,5 @@ return {
   { 'nvim-treesitter/playground' },
   { 'nvim-mini/mini.colors', version = false },
   { 'akinsho/toggleterm.nvim', version = '*', config = true },
+  { 'tpope/vim-surround' },
 }
