@@ -42,3 +42,6 @@ vim.keymap.set('n', '<leader>r', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true, desc = 'make file e[X]ecutable' })
 
 vim.keymap.set('i', '<C-a>', '<Nop>')
+
+vim.keymap.set('n', '<C-t>', '<cmd>exe v:count1 . "ToggleTerm"<CR>', { silent = true })
+vim.keymap.set('i', '<C-t>', '<cmd>exe v:count1 . "ToggleTerm"<CR>', { silent = true })
