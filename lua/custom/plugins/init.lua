@@ -28,5 +28,5 @@ return {
   },
   { 'nvim-treesitter/playground' },
   { 'nvim-mini/mini.colors', version = false },
-  { 'akinsho/toggletermin.nvim', version = '*', config = true },
+  { 'akinsho/toggleterm.nvim', version = '*', config = true },
 }
