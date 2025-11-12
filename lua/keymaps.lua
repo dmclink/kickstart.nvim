@@ -48,3 +48,6 @@ vim.keymap.set('i', '<C-t>', '<cmd>exe v:count1 . "ToggleTerm"<CR>', { silent = 
 
 vim.keymap.set('n', '<leader>ls', '<cmd>LivePreview start<CR>')
 vim.keymap.set('n', '<leader>lx', '<cmd>LivePreview close<CR>')
+
+vim.keymap.set('v', '>', '>gv')
+vim.keymap.set('v', '<', '<gv')
