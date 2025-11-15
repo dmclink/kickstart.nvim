@@ -17,3 +17,5 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.isfname:append '@-@'
+
+vim.opt.foldmethod = 'marker'
