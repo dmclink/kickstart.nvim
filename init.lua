@@ -690,7 +690,6 @@ require('lazy').setup({
         html = {},
         jsonls = {},
         emmet_ls = {},
-        prettierd = {},
 
         lua_ls = {
           -- cmd = { ... },
@@ -780,13 +779,13 @@ require('lazy').setup({
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        javascript = { 'prettierd', 'prettier', stop_after_first = true, args = { '--single-quote', '--tab-width=4' } },
-        typescript = { 'prettierd', 'prettier', stop_after_first = true, args = { '--single-quote', '--tab-width=4' } },
-        javascriptreact = { 'prettierd', 'prettier', stop_after_first = true, args = { '--single-quote', '--tab-width=4' } },
-        typescriptreact = { 'prettierd', 'prettier', stop_after_first = true, args = { '--single-quote', '--tab-width=4' } },
-        css = { 'prettierd', 'prettier', stop_after_first = true, args = { '--single-quote', '--tab-width=4' } },
-        json = { 'prettierd', 'prettier', stop_after_first = true, args = { '--single-quote', '--tab-width=4' } },
-        html = { 'prettierd', 'prettier', stop_after_first = true },
+        javascript = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
+        typescript = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
+        javascriptreact = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
+        typescriptreact = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
+        css = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
+        json = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
+        html = { 'prettierd' },
       },
     },
   },
