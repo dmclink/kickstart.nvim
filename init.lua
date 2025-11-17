@@ -853,6 +853,7 @@ require('lazy').setup({
         ['<C-a>'] = { 'select_and_accept', 'fallback' },
         ['<C-p>'] = { 'select_prev', 'fallback' },
         ['<C-n>'] = { 'select_next', 'fallback' },
+        ['<tab>'] = { 'snippet_forward', 'fallback' },
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
       },
