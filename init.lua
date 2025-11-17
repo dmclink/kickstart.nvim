@@ -685,7 +685,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
         --
-        eslint = {},
+        eslint_d = {},
         cssls = {},
         html = {},
         jsonls = {},
@@ -770,6 +770,7 @@ require('lazy').setup({
           return {
             timeout_ms = 500,
             lsp_format = 'fallback',
+            async = false,
           }
         end
       end,
@@ -779,13 +780,13 @@ require('lazy').setup({
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        javascript = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
-        typescript = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
-        javascriptreact = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
-        typescriptreact = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
-        css = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
-        json = { 'prettierd', args = { '--single-quote', '--tab-width=4' } },
-        html = { 'prettierd' },
+        javascript = { 'prettierd', 'eslint_d' },
+        typescript = { 'prettierd', 'eslint_d' },
+        javascriptreact = { 'prettierd', 'eslint_d' },
+        typescriptreact = { 'prettierd', 'eslint_d' },
+        css = { 'prettierd', 'eslint_d' },
+        json = { 'prettierd', 'eslint_d' },
+        html = { 'prettierd', 'eslint_d' },
       },
     },
   },
