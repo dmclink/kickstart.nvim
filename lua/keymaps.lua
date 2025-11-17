@@ -54,4 +54,4 @@ vim.keymap.set('v', '<', '<gv')
 
 vim.keymap.set('v', '<leader>r', ':<C-u>s/\\%V<C-r>"\\%V/g<Left><Left>', { noremap = true, silent = true })
 
-vim.keymap.set('n', '<leader>cp', ':CccPick<CR>')
+vim.keymap.set('n', '<leader>cp', ':CccPick<CR>', { desc = 'open [C]olor [P]icker' })
