@@ -104,4 +104,11 @@ return {
       }
     end,
   },
+  {
+    'danymat/neogen',
+    config = true,
+    opts = {
+      snippet_engine = 'luasnip',
+    },
+  },
 }
