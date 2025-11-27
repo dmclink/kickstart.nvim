@@ -104,11 +104,15 @@ return {
       }
     end,
   },
+
   {
     'danymat/neogen',
     config = true,
     opts = {
       snippet_engine = 'luasnip',
+    },
+    keys = {
+      { '<leader>ng', '<cmd>Neogen<CR>', desc = 'Run [N]eo [G]en doc generator' },
     },
   },
 }
