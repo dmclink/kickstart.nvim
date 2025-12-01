@@ -19,3 +19,16 @@ vim.opt.termguicolors = true
 vim.opt.isfname:append '@-@'
 
 vim.opt.foldmethod = 'marker'
+vim.lsp.config('gopls', {
+  settings = {
+    gopls = {
+      completeUnimported = true,
+      usePlaceholders = true,
+      staticcheck = true,
+      gofumpt = true,
+      analyses = {
+        unusedparams = true,
+      },
+    },
+  },
+})
