@@ -115,4 +115,23 @@ return {
       { '<leader>ng', '<cmd>Neogen<CR>', desc = 'Run [N]eo [G]en doc generator' },
     },
   },
+  {
+    'ray-x/go.nvim',
+    dependencies = {
+      'ray-x/guihua.lua',
+      'neovim/nvim-lspconfig',
+      'nvim-treesitter/nvim-treesitter',
+      opts = { lsp_cfg = true }, -- use go.nvim will setup gopls
+      config = function(lp, opts)
+        require('go').setup(opts)
+        --
+        -- format config here
+        --
+        local gopls_cfg = require('go.lsp').config()
+        -- gopls_cfg.filetypes = { 'go', 'gomod'}, -- override settings
+        vim.lsp.config.gopls = gopls_cfg
+        vim.lsp.enable 'gopls'
+      end,
+    },
+  },
 }
